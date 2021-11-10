@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>MMS Exchange</title>
+    <meta name="title" content="MMS Exchange">
+    <link rel="icon" href="img/logo.svg" type="image/icon type">
+    <meta name="description" content="Easy and felixable">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="mms-it.com">
+    <meta property="og:title" content="MMS Exchange">
+    <meta property="og:description" content="Easy and felixable">
+    <meta property="og:image" content="./img/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="mms-it.com">
+    <meta property="twitter:title" content="MMS Exchange">
+    <meta property="twitter:description" content="Easy and felixable">
+    <meta property="twitter:image" content="./img/logo.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/fontawsome/css/all.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+</head>
+<body id="body">
+    <section class="app">
+        <div class="output">
+            <div class="brand-container">
+                <img src="img/logo.svg" class="logo" alt="">
+                <p class="brand">MMEx</p>
+            </div>
+            <div class="result-container">
+                <p class="result" id="result">0.00</p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <form class="calc" id="calc">
+            <div class="input-container container">
+                <label>Input</label>
+                <input type="number" class="input" required id="input" min="1" placeholder="0.00" autofocus>
+            </div>
+            <div class="to-container container">
+                <label>from</label>
+                <select required id="from">
+                    <option selected value="">Select Currency</option>
+                </select>
+            </div>
+            <div class="from-container container">
+                <label>To</label>
+                <select id="to">
+
+                </select>
+            </div>
+            <div class="btn-container container">
+                <button class="calcBtn" id="calcBtn">Calculate</button>
+            </div>
+        </form>
+        <div class="history-container">
+            <table class="history" id="history">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody id="tb">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div class="dark-container">
+        <button class="dark" onclick="chgToDark()">
+            <i id="dm" class="fas fa-moon"></i>
+        </button>
+    </div>
+<script src="js/app.js"></script>
+<script src="js/data.js"></script>
+</body>
+</html>
